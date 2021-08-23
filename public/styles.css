@@ -1,0 +1,168 @@
+#input-field {
+    font-size: 4em;
+    font-weight: 300;
+    border-color: blueviolet;
+    margin-top: 40px;
+    border-width: 8px;
+    border-bottom-width: 0.7px;
+    border-top-width: 0.7px;
+}
+
+#input-field::placeholder {
+    font-weight: 300;
+    opacity: 0.3;   
+}
+
+#navi {
+    background: rgb(211, 122, 255);
+    background: linear-gradient(200deg, rgba(211, 122, 255 ,0.5) 0%, rgba(248,244,252,1) 100%, rgba(255,255,255,1) 100%);
+    box-shadow: 1px 0px 40px gray;
+}
+
+#forflex {
+    display: flex;
+}
+
+#logo {
+    width: 15%;
+    height: 15%;
+    margin-top: 20px;
+    margin-left: 20px;
+    animation-name: log;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes log {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#display {
+    font-size: 5.4rem;
+    letter-spacing: 9px;
+    padding-top: 40px;
+    margin-left: -10px;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#body {
+    border-radius: 60px;
+    background-color: rgb(248, 244, 252);
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 85%;
+}
+
+#card {
+    box-shadow: 1px 1px 30px 2px black;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card:active {
+    box-shadow: none;
+}
+
+#card-body {
+    white-space: pre-wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#thumbnail {
+    border: 2px solid rgb(138, 43, 226);
+    border-radius: 20px;
+    margin-top: 10%;
+    box-shadow: 1px 1px 15px 2px black;
+    width: 500px;
+}
+
+#line {
+    background-color: blueviolet;
+    height: 2px;
+}
+
+#line1 {
+    background-color: blueviolet;
+    height: 3px;
+}
+
+#title {
+    font-size: 2.7em;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(52, 0, 112);
+}
+
+#title:active {
+    color: hotpink;
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 40px;
+    background: rgb(211, 122, 255);
+    background: linear-gradient(20deg, rgba(211, 122, 255 ,0.5) 20%, rgba(248,244,252,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+#videobox {
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(248,244,252,1);
+    border-radius: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#video {
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+}
+
+#video-title {
+    padding-top: 30px;
+    font: 3em sans-serif;
+    border: 1px solid black;
+    white-space: pre-wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#video-description {
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    word-wrap: break-word;
+    font-size: 2.4em;
+    font-weight: 400;
+}
+
+#footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-top: 60px;
+    background: rgb(211, 122, 255);
+    background: linear-gradient(20deg, rgba(211, 122, 255 ,0.5) 40%, rgba(248,244,252,1) 100%, rgba(255,255,255,1) 100%);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
