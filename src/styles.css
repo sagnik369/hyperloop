@@ -1,9 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 #input-field {
-    font-size: 4em;
+    font-size: 3rem;
     font-weight: 300;
     border-color: blueviolet;
-    margin-top: 40px;
-    border-width: 8px;
+    margin-top: 4rem;
+    border-width: .8rem;
     border-bottom-width: 0.7px;
     border-top-width: 0.7px;
 }
@@ -14,39 +24,21 @@
 }
 
 #navi {
-    background: rgb(211, 122, 255);
     background: linear-gradient(200deg, rgba(211, 122, 255 ,0.5) 0%, rgba(248,244,252,1) 100%, rgba(255,255,255,1) 100%);
-    box-shadow: 1px 0px 40px gray;
-}
-
-#forflex {
-    display: flex;
+    box-shadow: 1px 0px 4rem gray;
 }
 
 #logo {
-    width: 15%;
-    height: 15%;
-    margin-top: 20px;
-    margin-left: 20px;
-    animation-name: log;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes log {
-  0% {transform: rotate(0deg);}
-  25% {transform: rotate(90deg);}
-  50% {transform: rotate(180deg);}
-  75% {transform: rotate(270deg);}
-  100% {transform: rotate(360deg);}
+    float: right;
+    margin-top: -6.5rem;
+    margin-right: 2rem;
 }
 
 #display {
-    font-size: 5.4rem;
-    letter-spacing: 9px;
-    padding-top: 40px;
-    margin-left: -10px;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    padding-top: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 #hero {
@@ -56,20 +48,27 @@
 }
 
 #body {
-    border-radius: 60px;
+    border-radius: 3rem;
     background-color: rgb(248, 244, 252);
-    margin-top: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     width: 85%;
 }
 
 #card {
-    box-shadow: 1px 1px 30px 2px black;
-    border-radius: 60px;
+    box-shadow: 0 0 2rem rgb(173, 216, 230);
+    border-radius: .7rem;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 40rem;
     align-items: center;
+}
+
+#card:hover {
+    cursor: pointer;
 }
 
 #card:active {
@@ -78,30 +77,29 @@
 
 #card-body {
     white-space: pre-wrap;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #thumbnail {
     border: 2px solid rgb(138, 43, 226);
-    border-radius: 20px;
+    border-radius: 2rem;
     margin-top: 10%;
-    box-shadow: 1px 1px 15px 2px black;
-    width: 500px;
+    width: 50rem;
 }
 
 #line {
     background-color: blueviolet;
-    height: 2px;
+    height: .2rem;
 }
 
 #line1 {
     background-color: blueviolet;
-    height: 3px;
+    height: .4rem;
 }
 
 #title {
-    font-size: 2.7em;
+    font-size: 2.7rem;
     font-weight: 400;
     text-align: center;
     color: rgb(52, 0, 112);
@@ -115,54 +113,88 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-bottom: 30px;
-    margin-top: 40px;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
     width: 100%;
-    border-radius: 40px;
-    background: rgb(211, 122, 255);
+    border-radius: 2rem;
     background: linear-gradient(20deg, rgba(211, 122, 255 ,0.5) 20%, rgba(248,244,252,1) 100%, rgba(255,255,255,1) 100%);
 }
 
 #videobox {
-    margin-top: 50px;
+    margin-top: 5rem;
     width: 100%;
     background-color: rgba(248,244,252,1);
-    border-radius: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 #video {
     width: 100%;
-    height: 30vh;
-    border-radius: 20px;
+    height: 100%;
+    border-radius: 1rem;
 }
 
 #video-title {
-    padding-top: 30px;
-    font: 3em sans-serif;
-    border: 1px solid black;
+    padding-top: 3rem;
+    font: 3rem sans-serif;
     white-space: pre-wrap;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 #video-description {
-    border: 1px solid black;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
     word-wrap: break-word;
-    font-size: 2.4em;
+    font-size: 2.4rem;
     font-weight: 400;
 }
 
 #footer {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    margin-top: 60px;
-    background: rgb(211, 122, 255);
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    margin-top: 6rem;
     background: linear-gradient(20deg, rgba(211, 122, 255 ,0.5) 40%, rgba(248,244,252,1) 100%, rgba(255,255,255,1) 100%);
     text-align: center;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+
+@media (min-width: 400px) {
+    #videobox {
+        height: 25rem;
+    }
+    #video-container {
+        margin: 4rem auto;
+        width: 85%;
+    }
+    #body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    #card {
+        border-radius: 2rem;
+    }
+}
+
+@media (min-width: 700px) {
+    #videobox {
+        height: 40rem;
+    }
+    #card {
+        height: 50rem;
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 950px) {
+    #videobox {
+        height: 70rem;
+    }
+    #card {
+        height: 60rem;
+    }
 }
