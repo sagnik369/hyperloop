@@ -116,6 +116,7 @@ html {
     padding-bottom: 3rem;
     margin-top: 4rem;
     width: 100%;
+    height: 30rem;
     border-radius: 2rem;
     background: linear-gradient(20deg, rgba(211, 122, 255 ,0.5) 20%, rgba(248,244,252,1) 100%, rgba(255,255,255,1) 100%);
 }
@@ -123,6 +124,7 @@ html {
 #videobox {
     margin-top: 5rem;
     width: 100%;
+    height: 25rem;
     background-color: rgba(248,244,252,1);
     border-radius: 1rem;
     padding-left: 1.5rem;
@@ -163,9 +165,6 @@ html {
 
 
 @media (min-width: 400px) {
-    #videobox {
-        height: 25rem;
-    }
     #video-container {
         margin: 4rem auto;
         width: 85%;
