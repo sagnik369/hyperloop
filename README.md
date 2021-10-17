@@ -1,0 +1,1 @@
+This app uses YouTube API. Has a search bar for searching Youtube videos. Made with React.js
