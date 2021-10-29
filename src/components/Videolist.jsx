@@ -8,8 +8,8 @@ function Videolist(props) {
     });
 
         return (
-            <div id="hero">
-                <div id="body">
+            <div className="hero-container">
+                <div className="hero">
                     { videoitem }
                 </div>                
             </div>

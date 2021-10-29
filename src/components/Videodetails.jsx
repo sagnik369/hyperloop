@@ -8,12 +8,12 @@ function Videodetails({ video }) {
     const url = "https://www.youtube.com/embed/" + video.id.videoId;
 
     return (
-        <div id="video-container" className="video-detail row">
-            <div id="videobox" className="embed-responsive embed-responsive-16by9">
-                <iframe id="video" allowFullScreen={ true } className="embed-responsive-item" src={ url } title={ video.snippet.title } />
+        <div className="video-box-container row">
+            <div className="video-box embed-responsive embed-responsive-16by9">
+                <iframe className="video embed-responsive-item" src={ url } title={ video.snippet.title } allowFullScreen={ true }/>
             </div>
-            <div id="video-title">{ video.snippet.title }</div><hr id ="line1" className="my-5" />
-            <div id="video-description">{ video.snippet.description }</div>
+            <div className="video-title">{ video.snippet.title }</div><hr className="line1 my-5" />
+            <div className="video-description">{ video.snippet.description }</div>
         </div>
     );
 
