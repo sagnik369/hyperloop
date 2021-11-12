@@ -4,8 +4,9 @@ function Footer(){
     let year = new Date().getFullYear();
     
     return (
-        <div className="footer">
-            Copyright @{ year }
+        <div id="footer" className="footer">
+             HyperLoop &copy; @{ year } <br />
+             Terms of Service | Privacy Policy
         </div>
     );
 }

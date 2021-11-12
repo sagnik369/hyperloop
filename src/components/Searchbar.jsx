@@ -14,7 +14,7 @@ class Searchbar extends Component{
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <input className="search-bar form-control bg-light text-center text-dark" placeholder="Search" onChange={ (event) => this.onInputChange(event.target.value) } /></div>
+              <input id="search-bar" className="search-bar form-control" placeholder="Search" onChange={ (event) => this.onInputChange(event.target.value) } /></div>
           </div>
       </div>
     );

@@ -9,7 +9,7 @@ function Videolist(props) {
 
         return (
             <div className="hero-container">
-                <div className="hero">
+                <div id="hero" className="hero">
                     { videoitem }
                 </div>                
             </div>

@@ -8,7 +8,7 @@ function Videodetails({ video }) {
     const url = "https://www.youtube.com/embed/" + video.id.videoId;
 
     return (
-        <div className="video-box-container row">
+        <div id="video-box-container" className="video-box-container row">
             <div className="video-box embed-responsive embed-responsive-16by9">
                 <iframe className="video embed-responsive-item" src={ url } title={ video.snippet.title } allowFullScreen={ true }/>
             </div>
